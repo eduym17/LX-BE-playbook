@@ -1,0 +1,15 @@
+{
+  "name": "1_refactoring_fizzbuzzp1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.2"
+  }
+}
