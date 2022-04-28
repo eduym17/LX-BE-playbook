@@ -21,6 +21,11 @@ class ExplorerController {
   static fizzbuzzScore(score) {
     return FizzbuzzService.applyValidationInScore(score);
   }
+
+  static getExplorersByLanguage(lang) {
+    const explorers = Reader.readJsonFile("explorers.json");
+    return ExplorerService.getExplorerByLanguage(explorers, lang);
+  }
 }
 
 module.exports = ExplorerController;

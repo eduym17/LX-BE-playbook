@@ -33,6 +33,12 @@ app.get("/v1/fizzbuzz/:score", (req, res) => {
   res.json(fizzBuzzScore);
 })
 
+app.get("/v1/explorers/stack/:lang", (req, res) => {
+  const lang = req.params.lang;
+  const explorersByLanguage = ExplorerController.getExplorersByLanguage(lang);
+  res.json(explorersByLanguage);
+})
+
 app.listen(port, () => {
     console.log(`FizzBuzz API in localhost:${port}`);
 });

@@ -14,6 +14,11 @@ class ExplorerService {
     const usernamesInMission = explorersByMissionToGetUsernames.map((explorer) => explorer.githubUsername);
     return usernamesInMission;
   }
+
+  static getExplorerByLanguage(explorers, lang) {
+    const explorersByLanguage = explorers.filter(explorer => explorer.stacks.includes(lang));
+    return explorersByLanguage;
+  }
 }
 
 module.exports = ExplorerService;
